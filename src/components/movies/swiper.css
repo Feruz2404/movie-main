@@ -1,0 +1,47 @@
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: red;
+  background-color: #1d1d1dcc;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px;
+  color: white; /* Ensure icon color is white */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #ff4040; /* Lighter red on hover */
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
+/* Swiper Pagination Bullets */
+.swiper-pagination-bullet {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red;
+  opacity: 1; /* Make active bullet more prominent */
+  transform: scale(1.2); /* Slightly enlarge active bullet */
+}
+
+/* Swiper Container Styling */
+.swiper {
+  border-radius: 20px;
+  padding: 10px 0;
+  overflow: hidden; /* Ensures no overflow from swiper content */
+}

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+    @apply bg-white text-black;
+  }
+  
+  body.dark {
+    @apply bg-darkSecondary text-white;
+}
