@@ -6,6 +6,9 @@ import Home from "@/pages/home/Home";
 import Latest from "@/pages/latest/Latest";
 import Layout from "@/pages/layout/Layout";
 import NotFoundPage from "@/pages/notFount/NotFount";
+import Search from "@/pages/search/Search";
+import Login from "@/pages/login/Login";
+
 
 const Router = () => {
   const [favorites, setFavorites] = useState([]);
@@ -27,8 +30,13 @@ const Router = () => {
         { path: "latest", element: <Latest />, },
         { path: "/movie/:id", element: <Details />, },
         { path: "/movies", element: <Category />, },
-        { path: "*", element: <NotFoundPage />,},
+        { path: "/search", element: <Search />, },
+        { path: "*", element: <NotFoundPage />, },
       ],
+    },
+    {
+      path: "/login",
+      element: <Login />,
     },
   ]);
   return routes;

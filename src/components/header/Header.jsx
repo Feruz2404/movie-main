@@ -78,12 +78,7 @@ const Header = () => {
                         <option key={item.value} value={item.value}>{item.label}</option>
                     ))}
                 </select>
-
-                <button
-                    className='w-[130px] bg-red-700 text-white py-3 rounded-xl'
-                >
-                    Logout
-                </button>
+                <button onClick={() => navigate("/login")} className='w-[130px] bg-red-700 text-white py-3 rounded-xl'>Logout</button>
             </div>
         </div>
     );
